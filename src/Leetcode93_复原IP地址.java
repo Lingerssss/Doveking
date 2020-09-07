@@ -41,7 +41,8 @@ public class Leetcode93_复原IP地址 {
 //            }
 //        }
 //    }
-    public List<String> restoreIpAddresses(String s) {
+    //DFS
+    /*public List<String> restoreIpAddresses(String s) {
         List<String> res = new ArrayList<>();
         dfs(s, 1, 0, new LinkedList<>(), res);
         //System.out.println(res);
@@ -79,5 +80,6 @@ public class Leetcode93_复原IP地址 {
                 }
             }
         }
-    }
+    }*/
+
 }

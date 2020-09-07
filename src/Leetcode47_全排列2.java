@@ -21,7 +21,6 @@ public class Leetcode47_全排列2 {
         });
         List<List<Integer>> res=new ArrayList<>();
         dfs(nums.length,p,pb,new ArrayList<Integer>(),res);
-        System.out.println(res);
         return res;
     }
     void dfs(int size,int[] p,int[] pb,List lt,List<List<Integer>> res){

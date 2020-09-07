@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 //public class Main {
@@ -190,11 +191,115 @@ import java.util.List;
 //    }
 //
 //}
-public class Main {
+/*public class Main {
     public static void main(String[] args){
         Leetcode131_分割回文串 a=new Leetcode131_分割回文串();
-        List<List<String>> ss=a.partition("aab");
+        List<List<String>> ss=a.partition("a");
+    }
+
+}*/
+//public class Main {
+//    public static void main(String[] args){
+//        BookBuyerAgent a=new BookBuyerAgent();
+//        BookSellerAgent b=new BookSellerAgent();
+//        b.setup();
+//        b.takeDown();
+//        b.updateCatalogue("1",100);
+//        //BookSellerGui C=new BookSellerGui(b);
+//    }
+//
+//}
+/*public class Main {
+    public static void main(String[] args){
+        Leetcode546_移除盒子 a=new Leetcode546_移除盒子();
+        int s=a.removeBoxes(new int[]{1,2,2,1});
+        //BookSellerGui C=new BookSellerGui(b);
+    }
+
+}*/
+/*public class Main {
+    public static void main(String[] args){
+        Su_8_23 a=new Su_8_23();
+        int ss= Su_8_23.select();
+        //BookSellerGui C=new BookSellerGui(b);
+    }
+
+}*/
+/*public class Main {
+
+    public static void main(String[] args){
+        Leetcode332_重新安排行程 a=new Leetcode332_重新安排行程();
+        List<List<String>> sss=new ArrayList();
+        sss.add();
+
+        List<String> ss= a.findItinerary(new ArrayList<>().add());
+    }
+
+}*/
+/*public class Main {
+    public static void main(String[] args){
+        Leetcode657_机器人能否返回原点 a=new Leetcode657_机器人能否返回原点();
+        boolean sss=a.judgeCircle(new String("UD"));
+        Thread aa= new Thread("11");
+    }
+
+}*/
+/*public class Main {
+    public static void main(String[] args){
+        Leetcode1219_黄金矿工 a=new Leetcode1219_黄金矿工();
+        int res=a.getMaximumGold(new int[][]{
+            {0,6,0},
+            {5,8,7},
+            {0,9,0},
+            }
+        );
+
+
+    }
+
+}*/
+/*public class Main {
+    public static void main(String[] args){
+        Leetcode10_正则表达式匹配 a=new Leetcode10_正则表达式匹配();
+        boolean s=a.isMatch("aaa","aa");
+    }
+
+}*/
+/*public class Main {
+    public static void main(String[] args){
+        Leetcode526_优美的排列 a=new Leetcode526_优美的排列();
+        int s=a.countArrangement(3);
+    }
+
+}*/
+/*public class Main {
+    public static void main(String[] args){
+        bi_1 a=new bi_1();
+        List<Integer> s=a.spiralOrder(new int[][]{{1,1,0,1,1},{1,2,3,4}});
+        System.out.println(s);
+    }
+
+}*/
+/*public class Main {
+    public static void main(String[] args){
+        搜狗_1 a=new 搜狗_1();
+        int s=a.numberofprize(10,1,0);
+        System.out.println(s);
+        
+    }
+
+}*/
+public class Main {
+    public static void main(String[] args){
+        腾讯_2 a=new 腾讯_2();
+        int s=a.removeDuplicates(new int[]{4,3,2,2,1,1,2,3,4});
+        System.out.println(s);
     }
 
 }
+
+
+
+
+
 
