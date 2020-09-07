@@ -289,14 +289,14 @@ import java.util.List;
     }
 
 }*/
-public class Main {
+/*public class Main {
     public static void main(String[] args){
         腾讯_2 a=new 腾讯_2();
         int s=a.removeDuplicates(new int[]{4,3,2,2,1,1,2,3,4});
         System.out.println(s);
     }
 
-}
+}*/
 
 
 

@@ -1,3 +1,4 @@
+/*
 import java.util.Scanner;
 
 public class 腾讯_2 {
@@ -27,3 +28,4 @@ public class 腾讯_2 {
 
 
 }
+*/
