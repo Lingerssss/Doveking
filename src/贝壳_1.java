@@ -12,9 +12,10 @@ public class 贝壳_1 {
          for(int i=0;i<m;i++){
              for(int j=0;j<4;j++){
                  c[i][j]=scanner.next().charAt(0);
-                 //System.out.println(c[i][j]);
+
              }
          }
+
          HashMap<Character, Character> hm=new HashMap();
          hm.put('J','S');
          hm.put('S','B');
