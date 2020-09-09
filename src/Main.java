@@ -298,6 +298,24 @@ import java.util.List;
 
 }*/
 
+/*public class Main {
+    public static void main(String[] args){
+        Leetcode1415_长度为n的开心字符串中字典序第k小的字符串 a=new Leetcode1415_长度为n的开心字符串中字典序第k小的字符串();
+        String b=a.getHappyString1(1,3);
+        System.out.println(b);
+
+    }
+
+}*/
+public class Main {
+    public static void main(String[] args){
+        Leetcode1291_顺次数 a=new Leetcode1291_顺次数();
+        List<Integer> b=a.sequentialDigits(100,300);
+        System.out.println(b);
+
+    }
+
+}
 
 
 
