@@ -1,3 +1,4 @@
+/*
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,10 +10,9 @@ public class Leetcode22_括号组合 {
         dfs(n,p,pb,new String(),res);
         System.out.println(res);
         return res;
-    }
     void dfs(int n,char[] p, int[] pb, String str, List<String> res){
         //1.ending
-        if(str.length()==2*n){
+        if(str.length()==n<<1){
             res.add(str);
             return;
         }
@@ -29,3 +29,4 @@ public class Leetcode22_括号组合 {
         }
     }
 }
+*/

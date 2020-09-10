@@ -19,7 +19,8 @@ You should have received a copy of the GNU Lesser General Public
 License along with this library; if not, write to the
 Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 Boston, MA  02111-1307, USA.
- *****************************************************************/
+ *****************************************************************//*
+
 
 import jade.core.Agent;
 import jade.core.behaviours.*;
@@ -83,9 +84,11 @@ public class BookSellerAgent extends Agent {
 		System.out.println("Seller-agent "+getAID().getName()+" terminating.");
 	}
 
-	/**
+	*/
+/**
      This is invoked by the GUI when the user adds a new book for sale
-	 */
+	 *//*
+
 	public void updateCatalogue(final String title, final int price) {
 		addBehaviour(new OneShotBehaviour() {
 			public void action() {
@@ -95,14 +98,16 @@ public class BookSellerAgent extends Agent {
 		} );
 	}
 
-	/**
+	*/
+/**
 	   Inner class OfferRequestsServer.
 	   This is the behaviour used by Book-seller agents to serve incoming requests 
 	   for offer from buyer agents.
 	   If the requested book is in the local catalogue the seller agent replies 
 	   with a PROPOSE message specifying the price. Otherwise a REFUSE message is
 	   sent back.
-	 */
+	 *//*
+
 	private class OfferRequestsServer extends CyclicBehaviour {
 		public void action() {
 			MessageTemplate mt = MessageTemplate.MatchPerformative(ACLMessage.CFP);
@@ -131,14 +136,16 @@ public class BookSellerAgent extends Agent {
 		}
 	}  // End of inner class OfferRequestsServer
 
-	/**
+	*/
+/**
 	   Inner class PurchaseOrdersServer.
 	   This is the behaviour used by Book-seller agents to serve incoming 
 	   offer acceptances (i.e. purchase orders) from buyer agents.
 	   The seller agent removes the purchased book from its catalogue 
 	   and replies with an INFORM message to notify the buyer that the
 	   purchase has been sucesfully completed.
-	 */
+	 *//*
+
 	private class PurchaseOrdersServer extends CyclicBehaviour {
 		public void action() {
 			MessageTemplate mt = MessageTemplate.MatchPerformative(ACLMessage.ACCEPT_PROPOSAL);
@@ -166,3 +173,4 @@ public class BookSellerAgent extends Agent {
 		}
 	}  // End of inner class OfferRequestsServer
 }
+*/

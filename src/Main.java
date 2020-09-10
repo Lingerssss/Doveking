@@ -311,7 +311,7 @@ public class Main {
     public static void main(String[] args){
         Leetcode1291_顺次数 a=new Leetcode1291_顺次数();
         List<Integer> b=a.sequentialDigits(100,300);
-        System.out.println(b);
+        //System.out.println(b);
 
     }
 
