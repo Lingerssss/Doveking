@@ -198,33 +198,10 @@ import java.util.List;
     }
 
 }*/
-//public class Main {
-//    public static void main(String[] args){
-//        BookBuyerAgent a=new BookBuyerAgent();
-//        BookSellerAgent b=new BookSellerAgent();
-//        b.setup();
-//        b.takeDown();
-//        b.updateCatalogue("1",100);
-//        //BookSellerGui C=new BookSellerGui(b);
-//    }
-//
-//}
-/*public class Main {
-    public static void main(String[] args){
-        Leetcode546_移除盒子 a=new Leetcode546_移除盒子();
-        int s=a.removeBoxes(new int[]{1,2,2,1});
-        //BookSellerGui C=new BookSellerGui(b);
-    }
 
-}*/
-/*public class Main {
-    public static void main(String[] args){
-        Su_8_23 a=new Su_8_23();
-        int ss= Su_8_23.select();
-        //BookSellerGui C=new BookSellerGui(b);
-    }
 
-}*/
+
+
 /*public class Main {
 
     public static void main(String[] args){
@@ -307,11 +284,31 @@ import java.util.List;
     }
 
 }*/
-public class Main {
+/*public class Main {
     public static void main(String[] args){
         Leetcode1291_顺次数 a=new Leetcode1291_顺次数();
         List<Integer> b=a.sequentialDigits(100,300);
         //System.out.println(b);
+
+    }
+
+}*/
+public class Main {
+    public static void main(String[] args){
+    Leetcode1286_字母组合迭代器 a=new Leetcode1286_字母组合迭代器("abc",2);
+    String b1=a.next();
+    System.out.println(b1);
+    boolean c1=a.hasNext();
+    System.out.println(c1);
+        String b2=a.next();
+        System.out.println(b2);
+        boolean c2=a.hasNext();
+        System.out.println(c2);
+        String b3=a.next();
+        System.out.println(b3);
+        boolean c3=a.hasNext();
+        System.out.println(c3);
+
 
     }
 

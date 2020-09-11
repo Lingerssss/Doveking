@@ -1,5 +1,9 @@
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
+//index 不能回滚
+
 
 public class Leetcode1286_字母组合迭代器 {
     List<StringBuilder> res=new ArrayList<>();
@@ -8,7 +12,8 @@ public class Leetcode1286_字母组合迭代器 {
         char[] c=characters.toCharArray();
         boolean[] pb=new boolean[characters.length()];
 
-        dfs(c,pb,combinationLength,new StringBuilder(),res);
+        dfs(c,0,combinationLength,new StringBuilder(),res);
+
 
     }
 
@@ -21,23 +26,26 @@ public class Leetcode1286_字母组合迭代器 {
         return index<res.size();
 
     }
-    void dfs(char[]c, boolean[] pb,int length, StringBuilder sb,List<StringBuilder> res){
+    void dfs(char[]c, int index,int length, StringBuilder sb,List<StringBuilder> res){
         //
         if(sb.length()==length){
+
             res.add(new StringBuilder(sb));
             return;
         }
 
         //
-        for(int i=0;i<length;i++){
-            if(pb[i]==false){
-                pb[i]=true;
+        for(int i=index;i<c.length;i++){
+
+                index++;
+
                 sb.append(c[i]);
-                dfs(c,pb,length,sb,res);
-                pb[i]=false;
+                dfs(c,index,length,sb,res);
+
+
                 sb.deleteCharAt(sb.length()-1);
 
-            }
+
 
         }
     }
