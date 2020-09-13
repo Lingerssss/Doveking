@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Executors;
 
 //public class Main {
 //    public static void main(String[] args){
@@ -293,7 +294,7 @@ import java.util.List;
     }
 
 }*/
-public class Main {
+/*public class Main {
     public static void main(String[] args){
     Leetcode1286_字母组合迭代器 a=new Leetcode1286_字母组合迭代器("abc",2);
     String b1=a.next();
@@ -312,7 +313,23 @@ public class Main {
 
     }
 
-}
+}*/
+/*public class Main {
+    public static void main(String[] args){
+    Leetcode784_字母大小写全排列 a=new Leetcode784_字母大小写全排列();
+    List<String> b1=a.letterCasePermutation("J");
+    System.out.println(b1);
+    }
+}*/
+
+//public class Main {
+//    public static void main(String[] args){
+//        Leetcode357_计算各个位数不同的数字个数 a=new Leetcode357_计算各个位数不同的数字个数();
+//        int b=a.countNumbersWithUniqueDigits(2);
+//        System.out.println(b);
+//    }
+//}
+
 
 
 
