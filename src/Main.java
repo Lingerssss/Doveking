@@ -293,7 +293,7 @@ import java.util.List;
     }
 
 }*/
-public class Main {
+/*public class Main {
     public static void main(String[] args){
     Leetcode1286_字母组合迭代器 a=new Leetcode1286_字母组合迭代器("abc",2);
     String b1=a.next();
@@ -311,6 +311,27 @@ public class Main {
 
 
     }
+
+}*/
+/*public class Main {
+    public static void main(String[] args){
+        baidu_3 a= new baidu_3();
+        a.s2(2,2,new int[]{1,1});
+
+    }
+
+}*/
+public class Main {
+   /* public static void main(String[] args){
+        Leetcode226_翻转二叉树 a=new Leetcode226_翻转二叉树();
+        *//*TreeNode s1=new TreeNode(1);
+        TreeNode s2=new TreeNode(1);
+        TreeNode s3=new TreeNode(1);
+        TreeNode s4=new TreeNode(1);
+        TreeNode s5=new TreeNode(1);*//*
+
+        TreeNode res=a.invertTree();
+    }*/
 
 }
 
