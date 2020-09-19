@@ -8,21 +8,25 @@ public class Leetcode842_将数组拆分为斐波那契数列 {
         if(S.length()<3){
             return res;
         }
-        dfs(S,res);
+        dfs(S,0,res);
+        System.out.println(res);
         return res;
 
     }
-    private void dfs(String S,List<Integer> res,int tmp_length){
+    private void dfs(String S,int index,List<Integer> res){
         //
-        if(tmp_length==S.length()){
+        if(index==S.length()){
             return;
         }
         //
-        for(int i=0;i<S.length();i++){
-            int temp_int=S.substring
-            if(res.size()<=2||temp_int==res.get(res.size()-1)+res.get(res.size()-2)){
-                res.add(temp_int);
-                dfs(S,res,tmp_length+)
+        for(int i=1;i<=S.length();i++){
+            if(index+i<S.length()){
+                String tmp_String = S.substring(index, index + i);
+                if (res.size() <= 2 || Integer.parseInt(tmp_String) == res.get(res.size() - 1)+res.get(res.size() - 2)) {
+                    res.add(Integer.parseInt(tmp_String));
+                    dfs(S, index + 1, res);
+                }
+
             }
         }
 

@@ -321,17 +321,24 @@ import java.util.List;
     }
 
 }*/
-public class Main {
-   /* public static void main(String[] args){
+/*public class Main {
+    public static void main(String[] args){
         Leetcode226_翻转二叉树 a=new Leetcode226_翻转二叉树();
-        *//*TreeNode s1=new TreeNode(1);
+        TreeNode s1=new TreeNode(1);
         TreeNode s2=new TreeNode(1);
         TreeNode s3=new TreeNode(1);
         TreeNode s4=new TreeNode(1);
-        TreeNode s5=new TreeNode(1);*//*
+        TreeNode s5=new TreeNode(1);
 
         TreeNode res=a.invertTree();
     }*/
+
+
+public class Main {
+    public static void main(String[] args) {
+        Leetcode842_将数组拆分为斐波那契数列 a = new Leetcode842_将数组拆分为斐波那契数列();
+        List<Integer> b = a.splitIntoFibonacci(new String("123456789"));
+    }
 
 }
 
