@@ -1,3 +1,5 @@
+package Leetcode;
+
 public class Leetcode53_最大子序和 {
     //本题动态规划因为只与上一个数的状态有关，所以可以省略DP数组
     public int maxSubArray(int[] nums) {
@@ -14,7 +16,6 @@ public class Leetcode53_最大子序和 {
         return ans;
     }
 }
-
 
 
 //一开始写了个二维DP数组的，内存超限了

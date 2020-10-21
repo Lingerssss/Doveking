@@ -1,7 +1,12 @@
-import java.util.*;
+package Leetcode;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class Leetcode1079_活字印刷 {
-//    List<StringBuilder> ss=new ArrayList<>();
+    //    List<StringBuilder> ss=new ArrayList<>();
 //    public int numTilePossibilities(String tiles) {
 //        char[] chars = tiles.toCharArray();
 //
@@ -67,14 +72,15 @@ public class Leetcode1079_活字印刷 {
         dfs(tiles, new StringBuilder(), set, new ArrayList<>());
         return set.size();
     }
+
     void dfs(String tiles, StringBuilder chain, Set<StringBuilder> set, List<Integer> list) {
         for (int i = 0; i < tiles.length(); i++) {
             if (!list.contains(i)) {
                 chain.append(tiles.charAt(i));
                 set.add(chain);
                 list.add(i);
-                dfs(tiles, chain , set, list);
-                list.remove((Integer)i);
+                dfs(tiles, chain, set, list);
+                list.remove((Integer) i);
             }
         }
     }

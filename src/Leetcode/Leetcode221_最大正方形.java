@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 //public class Leetcode221_最大正方形 {
 //    public int maximalSquare(char[][] p) {
 //        if (p.length == 0) return 0;

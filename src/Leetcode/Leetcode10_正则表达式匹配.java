@@ -1,3 +1,4 @@
+package Leetcode;
 public class Leetcode10_正则表达式匹配 {
     public boolean isMatch(String s, String p) {
         int m = s.length();
@@ -12,8 +13,7 @@ public class Leetcode10_正则表达式匹配 {
                     if (matches(s, p, i, j - 1)) {
                         f[i][j] = f[i][j] || f[i - 1][j];
                     }
-                }
-                else {
+                } else {
                     if (matches(s, p, i, j)) {
                         f[i][j] = f[i - 1][j - 1];
                     }
@@ -32,7 +32,6 @@ public class Leetcode10_正则表达式匹配 {
         }
         return s.charAt(i - 1) == p.charAt(j - 1);
     }
-
 
 
 }

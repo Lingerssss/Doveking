@@ -1,2 +1,2 @@
-package PACKAGE_NAME;public class Shenxinfu_1 {
+public class Shenxinfu_1 {
 }

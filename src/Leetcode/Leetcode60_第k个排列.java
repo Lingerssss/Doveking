@@ -1,5 +1,4 @@
-import java.util.*;
-
+package Leetcode;
 
 public class Leetcode60_第k个排列 {
 //    public String getPermutation(Integer n, int k) {
@@ -86,7 +85,7 @@ public class Leetcode60_第k个排列 {
 //}
 
 
-//    public String getPermutation(Integer n, int k) {
+    //    public String getPermutation(Integer n, int k) {
 //        int[] p = new int[n];
 //        for (int i = 0; i < n; i++) {
 //            p[i] = i + 1;
@@ -116,28 +115,30 @@ public class Leetcode60_第k个排列 {
 //            }
 //        }
 //
-public String getPermutation(int n, int k) {
-    int[] nums = new int[n];
-    for (int i = 0; i < n; i++) {
-        nums[i] = i + 1;
-    }
-    StringBuilder sb = new StringBuilder();
-    k--;
-    for (int i = 0; i < n; i++) {
-        int tmp = helper(n - i - 1);
-        sb.append((char) (nums[k / tmp] + 48));
-        System.out.println(sb);
-        delete(nums, k / tmp, n - i);
-        k %= tmp;
+    public String getPermutation(int n, int k) {
+        int[] nums = new int[n];
+        for (int i = 0; i < n; i++) {
+            nums[i] = i + 1;
+        }
+        StringBuilder sb = new StringBuilder();
+        k--;
+        for (int i = 0; i < n; i++) {
+            int tmp = helper(n - i - 1);
+            sb.append((char) (nums[k / tmp] + 48));
+            System.out.println(sb);
+            delete(nums, k / tmp, n - i);
+            k %= tmp;
+        }
+
+        return new String(sb);
     }
 
-    return new String(sb);
-}
     // 求阶乘
     public int helper(int n) {
         if (n == 1 || n == 0) return 1;
         return helper(n - 1) * n;
     }
+
     private void delete(int[] nums, int i, int size) {
         while (i < size - 1) {
             // nums[i + 1] = nums[i + 1];

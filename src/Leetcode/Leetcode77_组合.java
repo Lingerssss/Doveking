@@ -1,10 +1,10 @@
-import java.util.ArrayList;
-import java.util.Collections;
+package Leetcode;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Leetcode77_组合 {
-//    int l;
+    //    int l;
 //    public List<List<Integer>> combine(int n, int k) {
 //        l=k;
 //        int[] p=new int[n];
@@ -38,31 +38,33 @@ public class Leetcode77_组合 {
 //        }
 //
 //    }
-    List<List<Integer>> list=new ArrayList<>();
+    List<List<Integer>> list = new ArrayList<>();
     int count;
+
     public List<List<Integer>> combine(int n, int k) {
-        if(k==0) {
-            return list;}
-        count=k;
-        ArrayList<Integer> chain=new ArrayList<>();
-        backstrack(n,1,k,chain);
+        if (k == 0) {
+            return list;
+        }
+        count = k;
+        ArrayList<Integer> chain = new ArrayList<>();
+        backstrack(n, 1, k, chain);
         return list;
 
     }
-    public void backstrack(int num,int index,int k,ArrayList<Integer> chain){
-        if(chain.size()==count){
+
+    public void backstrack(int num, int index, int k, ArrayList<Integer> chain) {
+        if (chain.size() == count) {
             list.add(new ArrayList(chain));
-            return ;
+            return;
         }
-        if(k>0){
-            for(int i=index;i<=num;i++){
+        if (k > 0) {
+            for (int i = index; i <= num; i++) {
                 chain.add(i);
-                backstrack(num,i+1,k-1,chain);
-                chain.remove(chain.size()-1);
+                backstrack(num, i + 1, k - 1, chain);
+                chain.remove(chain.size() - 1);
             }
         }
     }
-
 
 
 //public List<List<Integer>> combine(int n, int k) {

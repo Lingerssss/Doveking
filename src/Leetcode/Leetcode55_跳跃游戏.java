@@ -1,6 +1,8 @@
+package Leetcode;
+
 public class Leetcode55_跳跃游戏 {
     public boolean canJump(int[] nums) {
-        int len=nums.length;
+        int len = nums.length;
 
         //长度为1直接true
         if (len == 1) {
@@ -17,10 +19,9 @@ public class Leetcode55_跳跃游戏 {
                 }
                 //更新max
                 if (i + nums[i] >= max) {
-                    max=i+nums[i];
+                    max = i + nums[i];
                 }
-            }
-            else {
+            } else {
                 return false;
             }
 

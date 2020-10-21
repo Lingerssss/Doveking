@@ -1,27 +1,30 @@
+package Leetcode;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Leetcode51_N皇后 {
     public List<List<String>> solveNQueens(int n) {
-        List<List<String>> res=new ArrayList<>();
-        boolean[][] pb=new boolean[n][n];
-        dfs(n,res,new ArrayList<>(),pb);
+        List<List<String>> res = new ArrayList<>();
+        boolean[][] pb = new boolean[n][n];
+        dfs(n, res, new ArrayList<>(), pb);
         return res;
 
 
     }
-    void dfs(int n,List<List<String>> res,List<String> chain,boolean[][] pb){
+
+    void dfs(int n, List<List<String>> res, List<String> chain, boolean[][] pb) {
         //
-        if(res.size()==n){
+        if (res.size() == n) {
             return;
         }
         //
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n;j++){
-                if(pb[i][j]==false){
-                    for(int m=0;m<n;m++){
-                        pb[i][m]=true;
-                        pb[m][j]=true;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (pb[i][j] == false) {
+                    for (int m = 0; m < n; m++) {
+                        pb[i][m] = true;
+                        pb[m][j] = true;
                     }
                     chain.add("Q");
                 }
@@ -71,7 +74,6 @@ public class Leetcode51_N皇后 {
         }
         return true;
     }*/
-
 
 
 }

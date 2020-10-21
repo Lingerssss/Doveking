@@ -1,3 +1,5 @@
+package Leetcode;
+
 public class Leetcode424_替换后的最长重复子串 {
     private int[] map = new int[26];
 

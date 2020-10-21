@@ -1,3 +1,5 @@
+import Leetcode.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -334,13 +336,113 @@ import java.util.List;
     }*/
 
 
+//public class Main {
+//    public static void main(String[] args) {
+//        Leetcode842_将数组拆分为斐波那契数列 a = new Leetcode842_将数组拆分为斐波那契数列();
+//        List<Integer> b = a.splitIntoFibonacci(new String("123456789"));
+//    }
+//
+//}
+/*public class Main {
+    public static void main(String[] args) {
+       huawei_2 a=new huawei_2();
+       a.show("/a/b/c");
+       String str=a.rm("/a/b/c/","/b/c");
+//       String Str1=a.move("/a1")
+
+    }
+
+}*/
+//public class Main {
+//    public static void main(String[] args) {
+//        Leetcode842_将数组拆分为斐波那契数列 a = new Leetcode842_将数组拆分为斐波那契数列();
+//        List<Integer> b = a.splitIntoFibonacci(new String("123456789"));
+//    }
+//
+//}
+/*public class Main {
+    public static void main(String[] args) {
+       didi a=new didi();
+       a.solve(3,3,"ABC","DDD");
+
+    }
+
+}*/
+/*public class Main {
+    public static void main(String[] args) {
+       三元组 a=new 三元组();
+       int b=a.three(new int[]{2,3,5,4,3,3});
+       System.out.println(b);
+
+    }
+
+}*/
+/*public class Main {
+    public static void main(String[] args) {
+        huawei a=new huawei();
+        List<Integer> res=new ArrayList<>();
+        a.dfs(new int[][]{
+                        {1,2,3,1},
+                        {2,1,5,2},
+                        {3,20,7,6},
+                        {4,5,2,2}
+        },new boolean[4],new ArrayList<>(),new int[]{0,0,10},new int[]{0,0},res
+                );
+        System.out.println("res"+res);
+
+    }
+
+}*/
+/*public class Main {
+    public static void main(String[] args) {
+        Leetcode401_二进制手表 a=new Leetcode401_二进制手表();
+        List<String> b=a.readBinaryWatch(2);
+        System.out.println(b);
+    }
+
+}*/
+/*public class Main {
+    public static void main(String[] args) {
+        Shenxinfu_2 a=new Shenxinfu_2();
+        int s=a.minDistance("abc","abcd");
+        System.out.println(s);
+    }
+
+}*/
+/*public class Main {
+    public static void main(String[] args) {
+        Leetcode28_实现strStr a=new Leetcode28_实现strStr();
+        int res=a.strStr("hello","ll");
+        System.out.println(res);
+    }
+
+}*/
+
+/*public class Main {
+    public static void main(String[] args) {
+        xiecheng a=new xiecheng();
+        int res=a.judge("ABcD","Hello my Hello guy");
+        System.out.println(res);
+    }
+
+}*/
+/*public class Main {
+    public static void main(String[] args) {
+        最大被3整除的数 a=new 最大被3整除的数();
+        String res=a.max(new int[]{1,2});
+        System.out.println(res);
+    }
+
+}*/
 public class Main {
     public static void main(String[] args) {
-        Leetcode842_将数组拆分为斐波那契数列 a = new Leetcode842_将数组拆分为斐波那契数列();
-        List<Integer> b = a.splitIntoFibonacci(new String("123456789"));
+        Leetcode435_不重叠的区间个数 a=new Leetcode435_不重叠的区间个数();
+        int res=a.eraseOverlapIntervals(new int[][]{{1,2},{2,3},{3,4},{1,3},{1,5}});
+        System.out.println(res);
     }
 
 }
+
 
 
 

@@ -1,3 +1,5 @@
+package Leetcode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,7 +56,7 @@ public class Leetcode526_优美的排列 {
 
     public int countArrangement(int N) {
         //List<List<Integer>> res = new ArrayList<>();
-        int[] count=new int[1];
+        int[] count = new int[1];
         int[] p = new int[N];
         int temp = 0;
         for (int i = 0; i < p.length; i++) {

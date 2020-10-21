@@ -1,3 +1,5 @@
+package Leetcode;
+
 public class Leetcode633平方数之和 {
     public boolean judgeSquareSum(int target) {
         if (target < 0) {

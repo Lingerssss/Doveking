@@ -1,3 +1,5 @@
+package Leetcode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,7 +59,7 @@ public class Leetcode131_分割回文串 {
         }
     }
 
-     boolean huiwenchuan(String s) {
+    boolean huiwenchuan(String s) {
         for (int i = 0; i < s.length() / 2; i++) {
             if (s.charAt(i) != s.charAt(s.length() - 1 - i)) {
                 return false;

@@ -1,2 +1,2 @@
-package PACKAGE_NAME;public class huawei_3 {
+public class huawei_3 {
 }
