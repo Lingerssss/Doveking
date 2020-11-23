@@ -1,8 +1,3 @@
-import Leetcode.*;
-
-import java.util.ArrayList;
-import java.util.List;
-
 //public class Main {
 //    public static void main(String[] args){
 //        Leetcode17电话号码的字母组合 a=new Leetcode17电话号码的字母组合();
@@ -434,6 +429,7 @@ import java.util.List;
     }
 
 }*/
+/*
 public class Main {
     public static void main(String[] args) {
         Leetcode435_不重叠的区间个数 a=new Leetcode435_不重叠的区间个数();
@@ -442,6 +438,76 @@ public class Main {
     }
 
 }
+*/
+/*public class Main {
+    public static void main(String[] args) {
+        guangfa a=new guangfa();
+        System.out.println(a.lastNChar("qqaaff",2));
+    }
+
+}*/
+/*public class Main {
+    public static void main(String[] args) {
+        Leetcode44_通配符匹配 a=new Leetcode44_通配符匹配();
+        boolean s=a.isMatch("acdcb","a*c?b");
+    }
+
+}*/
+/*public class Main {
+    public static void main(String[] args) {
+        剑指offer42_连续子数组的最大值 a=new 剑指offer42_连续子数组的最大值();
+        int res=a.maxSubArray(new int[]{1,2,3,4});
+        //
+
+
+        System.out.println(res);
+    }
+}*/
+
+/*
+public class Main {
+    public static void main(String[] args) {
+        Leetcode1647_字符频次唯一的最小删除次数 a=new Leetcode1647_字符频次唯一的最小删除次数();
+        int res=a.minDeletions("aaabbc");
+        //
+        System.out.println(res);
+    }
+}
+*/
+
+
+import Leetcode.Leetcode5605_检查两个字符串数组是否相等;
+
+/*public class Main {
+    public static void main(String[] args) {
+        Leetcode62_不同路径 a=new Leetcode62_不同路径();
+        int res=a.uniquePaths(7,3);
+        System.out.println(res);
+    }
+}*/
+/*public class Main {
+    public static void main(String[] args) {
+        Leetcode63_不同路径2 a=new Leetcode63_不同路径2();
+        int res=a.uniquePathsWithObstacles(new int[][]{{0,1},{0,0}});
+        System.out.println(res);
+    }
+}*/
+/*public class Main {
+    public static void main(String[] args) {
+        Leetcode64_最小路径和 a=new Leetcode64_最小路径和();
+        int res=a.minPathSum(new int[][]{{1,2,3},{4,5,6}});
+        System.out.println(res);
+    }
+}*/
+public class Main {
+    public static void main(String[] args) {
+        Leetcode5605_检查两个字符串数组是否相等 a=new Leetcode5605_检查两个字符串数组是否相等();
+        boolean res=a.arrayStringsAreEqual(new String[]{"ab","fds"},new String[]{"a","b","f","ds"});
+        System.out.println(res);
+    }
+}
+
+
 
 
 

@@ -7,6 +7,7 @@ import java.util.Map;
 
 public class Leetcode47_全排列2 {
     public List<List<Integer>> permuteUnique(int[] nums) {
+        ArrayList a=new ArrayList<String>();
         //将数组转为哈希表，保存每个数值和他出现的次数
         Map<Integer, Integer> m = new HashMap<>();
         for (int i : nums) {
